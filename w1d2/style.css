@@ -36,6 +36,20 @@ img {
   z-index: 100;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  background: #ecedf1;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 15px;
+  margin-left: 10px;
+  line-height: 1.5;
+}
+
 .sidebar {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   z-index: 50;
@@ -167,6 +181,65 @@ img {
   max-width: 100%;
 }
 
+.suggested {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.group {
+  position: relative;
+  
+
+}
+
+.group__link {
+  position: absolute;
+  top: 0;
+  margin-top: 30px;
+  margin-left: 15px;
+  width: 50%;
+}
+
+.group__button {
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  color: #000;
+  display: block;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.group__footer {
+  padding: 12px;
+  display: flex;
+}
+
+.group__footer > img {
+  flex: 1
+}
+.group__friends {
+  padding-left: 5px;
+}
+
+.contacts__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts_friend { 
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+
+.contacts_friend > p {
+  padding-left: 10px;
+  margin: 0;
+}
 /* helpers */
 
 .no-margin {
