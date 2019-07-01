@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* resert */
@@ -143,7 +143,7 @@ img {
   text-align: center;
   line-height: 40px;
   font-size: 20px;
-  background-image: url('https://dummyimage.com/50X50/ddd/ddd.jpg');
+  background-image: url("https://dummyimage.com/50X50/ddd/ddd.jpg");
 }
 
 .add__post {
@@ -297,7 +297,7 @@ svg {
 
 .icons__item:before {
   transition: background 0.3s ease-out;
-  content: '';
+  content: "";
   height: 2px;
   width: 70%;
   bottom: -13px;
@@ -325,6 +325,13 @@ svg {
   background-position: 0px -168px;
   height: 26px;
   width: 26px;
+}
+
+.settings .svg-settings {
+  width: 21px;
+  background: #ddd;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 /* helpers */
@@ -356,4 +363,8 @@ svg {
 .scroll::-webkit-scrollbar-thumb {
   background: rgba(144, 143, 143, 0.8);
   border-radius: 10px;
+}
+
+.text-right {
+  text-align: right;
 }
