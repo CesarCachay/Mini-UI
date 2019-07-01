@@ -103,7 +103,10 @@ img {
 }
 
 .content {
-  padding: 20px;
+  background-color: #f2f3f5;
+  padding: 10px 25px;
+  max-height: calc(100vh - 60px);
+  overflow: auto;
 }
 
 .contacts {
@@ -367,4 +370,37 @@ svg {
 
 .text-right {
   text-align: right;
+}
+
+/* Media queries */
+
+@media (max-width: 1000px) {
+  .navbar,
+  .contacts,
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    grid-column: 1 / 4;
+  }
+
+  .header {
+    grid-template: 1fr/ 1fr 100px;
+  }
+
+  .settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 801px) {
+  .posts {
+    padding: 0 30px;
+  }
+  .menu {
+    display: none;
+  }
 }
